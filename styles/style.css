@@ -31,10 +31,6 @@ input[type=radio] + span {
     border: 5px mediumaquamarine dashed;
 }
 
-.labels {
-    font
-}
-
 table {
     font-family: cursive;
     border: purple solid 5px;
