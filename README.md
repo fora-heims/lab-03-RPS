@@ -1,4 +1,35 @@
-# Alchemy Bootstrap Template
+# Rock Paper Scissors Lab
+
+### What *HTML elements* do I need?
+* Title -- static
+* Radio inputs for R / P / S -- dynamic
+* Button for submit -- static
+* Display span for result of most recent play -- dynamic
+* Display spans for Wins / Losses / Draws -- dynamic
+* Reset score button -- static
+* Display spans for number of times score has been reset -- dynamic
+
+### What *states* do I need?
+* Selected radio input
+* Computer random choice generated
+* wins
+* losses
+* draws
+* resets
+
+### What *events* do I need to listen for?
+* Play button
+    * compare user selection to computer selection
+    * if user = comp - draw
+    * if user rock & comp scissors - increment win
+    * if user scissors & paper scissors - increment win
+    * if user paper & comp rock - increment win
+    * else - increment loss
+    * display result
+* Reset Score Button
+    * clear wins losse and draws
+    * add one to number of resets
+
 
 ## Making a plan
 
