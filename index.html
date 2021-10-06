@@ -7,11 +7,57 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
-    <title>Document</title>
+    <title>Rock Paper Scissors Lab</title>
 </head>
 
 <body>
-    
+    <header>
+        <h1>Rock Paper Scissors</h1>
+        <h2>Rules:</h2>
+        <ul>
+            <li>Select One: Rock, Paper, or Scissors</li>
+            <li>Rock beats Scissors</li>
+            <li>Scissors beats Paper</li>
+            <li>Paper beats Rock</li>
+            <li>See how many times you can beat the computer</li>
+            <li>Reset the score to start a new session</li>
+        </ul>
+    </header>
+    <main>
+        <label id="label">
+            <input type="radio" name="rps" id="rock-radio" value="rock">
+            <span id="rock-span">Rock</span>
+        </label>
+        <label id="label">
+            <input type="radio" name="rps" id="paper-radio" value="paper">
+            <span id="paper-span">Paper</span>
+        </label>
+        <label id="label">
+            <input type="radio" name="rps" id="scissors-radio" value="scissors">
+            <span id="scissor-span">Scissors</span>
+        </label>
+        <button id="play-button">Play</button>
+    </main>
+    <footer>
+        <table>
+            <thead>
+                <tr>
+                    <th>Wins</th>
+                    <th>Losses</th>
+                    <th>Draws</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="wins">0</td>
+                    <td id="losses">0</td>
+                    <td id="draws">0</td>
+                </tr>
+            </tbody>
+        </table>
+        <button id="reset-button">Reset Score</button>
+        <p class="reset-statement">Reset Score Count: <span id="reset-count">0</span>
+    </footer>
     <script type="module" src="./app.js"></script>
 </body>
 
