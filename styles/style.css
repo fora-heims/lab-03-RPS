@@ -4,4 +4,49 @@
 }
 button {
     background-color: mediumpurple;
+    padding: 20px;
+    margin: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.labels {
+    margin: 30px;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+input[type=radio]:checked + span {
+    font-size: 2rem;
+    background-color:mediumvioletred;
+    color: mintcream;
+    border-radius: 40px;
+    border: dotted maroon 5px;
+}
+
+input[type=radio] + span {
+    padding: 20px;
+    border: 5px mediumaquamarine dashed;
+}
+
+.labels {
+    font
+}
+
+table {
+    font-family: cursive;
+    border: purple solid 5px;
+    margin: 20px;
+}
+
+th {
+    border-bottom: mediumslateblue 5px solid;
+}
+
+.reset-statement {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 20px;
 }
