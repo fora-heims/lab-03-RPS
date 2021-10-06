@@ -6,6 +6,8 @@ const scissors = document.getElementById('scissors-radio');
 const paper = document.getElementById('paper-radio');
 const play = document.getElementById('play-button');
 const reset = document.getElementById('reset-button');
+let message = document.getElementById('message');
+const 
 
 
 // initialize global state
