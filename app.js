@@ -1,5 +1,6 @@
 // import functions and grab DOM elements
 import { doesUserWin } from './utili.js';
+import { compThrow } from './get-random-throw.js';
 
 const play = document.getElementById('play-button');
 const reset = document.getElementById('reset-button');
@@ -8,8 +9,6 @@ const resetCount = document.getElementById('reset-count');
 const win = document.getElementById('wins-cell');
 const lose = document.getElementById('losses-cell');
 const draw = document.getElementById('draws-cell');
-
-const choices = ['rock', 'paper', 'scissors'];
 
 // initialize global state
 let wins = 0;
@@ -22,7 +21,7 @@ play.addEventListener('click', () => {
     // get user input
     let userChoice = document.querySelector('input[type=radio]:checked').value;
     // get computer throw function
-    let compChoice = choices[Math.floor(Math.random() * choices.length)];
+    let compChoice = compThrow();
     // use user input to update state
     let compare = doesUserWin(userChoice, compChoice);
     if (compare === 'draw') {
