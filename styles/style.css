@@ -2,6 +2,14 @@
     font-family: monospace;
     background-color: aquamarine;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 button {
     background-color: mediumpurple;
     padding: 20px;
